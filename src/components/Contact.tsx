@@ -34,14 +34,14 @@ const contactLinks = [
     icon: <FaLinkedinIn className="text-lg text-foreground" />,
     label: "linkedin",
     href: personalInfo.linkedin,
-    text: "LinkedIn",
+    text: "linkedin.com/in/prapanch-j",
     external: true,
   },
   {
     icon: <FaGithub className="text-lg text-foreground" />,
     label: "github",
     href: personalInfo.github,
-    text: "GitHub",
+    text: "github.com/prapanch07",
     external: true,
   },
 ];
@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="max-w-[1400px] mx-auto">
         <SectionHeading
           title="Get In Touch"
-          subtitle="Let's build something great together."
+          subtitle="Open to projects, opportunities, and meaningful conversations."
         />
 
         <div className="max-w-2xl mx-auto">
@@ -66,10 +66,11 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Let&apos;s Connect
               </h3>
+              <p className="text-muted-foreground mb-4 text-lg">
+                I’m always interested in working on useful products, solving real problems, and collaborating with people who care about building things well.
+              </p>
               <p className="text-muted-foreground mb-8 text-lg">
-                I&apos;m always interested in hearing about new projects and
-                opportunities. Whether you have a question or just want to say
-                hi, feel free to reach out!
+                Whether you have a project idea, a role opportunity, or just want to connect, feel free to reach out.
               </p>
 
               <motion.div

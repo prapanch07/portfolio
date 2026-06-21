@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiSun, HiMoon } from "react-icons/hi";
-import { personalInfo, navLinks } from "@/data/portfolio";
+import { navLinks } from "@/data/portfolio";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +33,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a
           href="/"
           onClick={(e) => {

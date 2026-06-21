@@ -4,12 +4,12 @@ export const personalInfo = {
   role: "Software Engineer",
   tagline: "Building apps that solve real problems.",
   location: "Trivandrum, Kerala",
-  email: "prapanchj789@gmail.com",
+  email: "prapanchappuse789@gmail.com",
   phone: "+91 9778259149",
   linkedin: "https://www.linkedin.com/in/prapanch-j",
   github: "https://github.com/prapanch07",
   website: "https://prapanchj789.web.app",
-  bio: "I'm a software engineer passionate about building scalable applications that make a real impact. With experience in Flutter, Django, and full-stack web development, I thrive at the intersection of clean code and great user experience. I love turning complex problems into elegant, intuitive solutions.",
+  bio: "I’m a software engineer focused on building clean, reliable, and user-friendly applications. I enjoy turning real-world problems into simple digital experiences, with most of my work centered around Flutter, Firebase, Django, and full-stack development.\n\nI care about writing readable code, solving edge cases properly, and creating products that feel smooth for the people using them.",
   shortBio:
     "Software Engineer specializing in mobile and web applications. Currently building large-scale booking systems at Lascade. Passionate about clean architecture, API design, and creating delightful user experiences.",
 };
@@ -19,35 +19,36 @@ export const experiences = [
     company: "Lascade",
     role: "Flutter Developer",
     period: "Feb 2025 – Present",
-    type: "Full-time",
+    type: "FULL-TIME",
     color: "primary" as const,
     highlights: [
-      "Contributing to the development of large-scale booking applications handling real-world transaction workflows and user concurrency scenarios.",
-      "Identified and resolved complex production issues related to state management, API failures, and edge-case user flows.",
-      "Collaborated closely with backend and product teams to refine booking logic, validation rules, and error-handling mechanisms across multiple applications.",
+      "Working on large booking applications where performance, reliability, and smooth user flow are important.",
+      "Fixing real production issues related to app state, API responses, validations, and edge-case user actions.",
+      "Collaborating with backend and product teams to improve booking flows, error handling, and overall app stability.",
     ],
   },
   {
     company: "Peaktew",
     role: "Flutter Developer Intern",
     period: "Aug 2024 – Jan 2025",
-    type: "Internship",
+    type: "INTERNSHIP",
     color: "secondary" as const,
     highlights: [
-      "Integrated APIs to ensure smooth communication between the frontend and backend.",
-      "Designed and implemented user interfaces that enhanced user experience and aligned with project goals.",
+      "Built and improved Flutter screens with a focus on clean UI, responsiveness, and better user experience.",
+      "Connected frontend features with backend APIs and handled data flow across different parts of the app.",
+      "Learned how to debug real app issues, improve existing features, and work closely with project requirements.",
     ],
   },
   {
     company: "Brototype",
     role: "Campus Lead",
     period: "Apr 2023 – Oct 2023",
-    type: "Leadership",
+    type: "LEADERSHIP",
     color: "accent" as const,
     highlights: [
-      "Founded the Brototype Campus Initiative, establishing a strong technical community on campus.",
-      "Hosted technical events and led a team of six students to drive engagement and learning.",
-      "Demonstrated leadership, event planning, and team management skills through successful initiatives.",
+      "Started and managed a campus initiative to create a stronger technical learning environment among students.",
+      "Organized technical sessions and guided a small team to plan, coordinate, and run campus activities.",
+      "Improved my leadership, communication, and team management skills through practical event experience.",
     ],
   },
 ];
@@ -95,13 +96,13 @@ export const skills = [
 export const education = [
   {
     institution: "Rajadhani Institute of Engineering and Technology",
-    degree: "Bachelor of Technology",
-    field: "Computer Science Engineering",
+    degree: "Bachelor of Technology in Computer Science Engineering",
+    field: "",
     period: "2020 – 2024",
   },
   {
     institution: "Navabharath Higher Secondary School",
-    degree: "Higher Secondary",
+    degree: "Higher Secondary Education",
     field: "Science",
     period: "2018 – 2020",
   },
@@ -109,11 +110,11 @@ export const education = [
 
 export const courses = [
   {
-    title: "Full-Stack Web Development in Python Django with React",
+    title: "Full-Stack Web Development with Python, Django, and React",
     provider: "Mashupstack, Kochi",
     period: "July 2024 – Jan 2025",
     description:
-      "Completed a 6-month intensive program focused on backend development with Django and frontend development using React. Gained hands-on experience in building full-stack web applications.",
+      "Completed a hands-on full-stack development program focused on building practical web applications using Django and React. The course helped me strengthen my backend fundamentals, frontend development skills, and understanding of real-world project structure.",
   },
 ];
 

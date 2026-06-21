@@ -48,8 +48,7 @@ export default function Footer() {
 
         <div className="border-t border-background/20 mt-6 pt-6 flex flex-col md:flex-row items-center justify-between gap-2">
           <p className="text-sm text-background/50">
-            © {new Date().getFullYear()} {personalInfo.name}. All rights
-            reserved.
+            © 2026 {personalInfo.name}. All rights reserved.
           </p>
           <p className="text-sm text-background/50">
             Built with Next.js, Tailwind CSS & Framer Motion

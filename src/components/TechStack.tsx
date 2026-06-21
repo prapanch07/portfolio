@@ -76,7 +76,7 @@ export default function TechStack() {
               viewport={{ once: true, margin: "-50px" }}
             >
               <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4 font-mono">
-                // {category}
+                {"//"} {category}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {skills

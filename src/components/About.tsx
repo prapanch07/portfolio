@@ -54,7 +54,7 @@ export default function About() {
       <div className="max-w-[1400px] mx-auto">
         <SectionHeading
           title="About Me"
-          subtitle="A bit about who I am and what drives me."
+          subtitle="A quick look at who I am, what I build, and how I think."
         />
 
         <motion.div
@@ -82,9 +82,11 @@ export default function About() {
               </div>
             </motion.div>
             <h3 className="text-2xl font-bold mb-4">{personalInfo.name}</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              {personalInfo.bio}
-            </p>
+            {personalInfo.bio.split("\n\n").map((paragraph, idx) => (
+              <p key={idx} className="text-muted-foreground leading-relaxed mb-4">
+                {paragraph}
+              </p>
+            ))}
             <motion.div
               variants={locationVariants}
               className="flex flex-wrap gap-2 mt-4"
@@ -120,7 +122,7 @@ export default function About() {
                   >
                     <p className="font-bold text-sm">{edu.institution}</p>
                     <p className="text-sm text-muted-foreground">
-                      {edu.degree}, {edu.field}
+                      {edu.degree}{edu.field ? `, ${edu.field}` : ""}
                     </p>
                     <p className="text-xs font-mono text-muted-foreground mt-1">
                       {edu.period}

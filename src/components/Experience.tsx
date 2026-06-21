@@ -83,7 +83,7 @@ export default function Experience() {
       <div className="max-w-[1400px] mx-auto">
         <SectionHeading
           title="Experience"
-          subtitle="My professional journey so far."
+          subtitle="The work, learning, and teams that shaped my journey."
         />
 
         {/* Timeline line */}
