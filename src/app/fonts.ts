@@ -1,4 +1,4 @@
-import { Space_Grotesk, Space_Mono, Inter, Unbounded } from "next/font/google";
+import { Space_Grotesk, Space_Mono, Inter, Unbounded, Margarine } from "next/font/google";
 
 export const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -25,4 +25,11 @@ export const unbounded = Unbounded({
   display: "swap",
   variable: "--font-unbounded",
   weight: ["700", "800"],
+});
+
+export const margarine = Margarine({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-margarine",
+  weight: ["400"],
 });

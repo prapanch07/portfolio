@@ -43,7 +43,7 @@ export default function Navbar() {
               window.location.reload();
             }
           }}
-          className="text-2xl font-bold font-unbounded tracking-tight hover:text-primary transition-colors cursor-pointer"
+          className="text-2xl font-bold font-margarine tracking-tight hover:text-primary transition-colors cursor-pointer"
         >
           JP
           <span className="text-primary">.</span>
