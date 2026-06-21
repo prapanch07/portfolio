@@ -15,10 +15,11 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-lavender: var(--lavender);
   --color-border: var(--border-color);
-  --font-sans: var(--font-noto-serif);
+  --font-sans: var(--font-margarine);
   --font-mono: var(--font-space-mono);
-  --font-unbounded: var(--font-noto-serif);
-  --font-noto-serif: var(--font-noto-serif);
+  --font-unbounded: var(--font-margarine);
+  --font-rampart-one: var(--font-rampart-one);
+  --font-margarine: var(--font-margarine);
 }
 
 :root {
@@ -68,12 +69,12 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-noto-serif), serif;
+  font-family: var(--font-margarine), cursive, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-noto-serif), serif;
-  font-weight: 700;
+  font-family: var(--font-margarine), cursive, sans-serif;
+  font-weight: 400;
 }
 
 ::selection {

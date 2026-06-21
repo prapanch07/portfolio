@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { spaceGrotesk, spaceMono, inter, unbounded, notoSerif } from "./fonts";
+import { spaceGrotesk, spaceMono, inter, unbounded, rampartOne, margarine } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${spaceMono.variable} ${inter.variable} ${unbounded.variable} ${notoSerif.variable} antialiased`}
+      className={`${spaceGrotesk.variable} ${spaceMono.variable} ${inter.variable} ${unbounded.variable} ${rampartOne.variable} ${margarine.variable} antialiased`}
     >
       <body className="min-h-screen">{children}</body>
     </html>
