@@ -61,7 +61,7 @@ export const projects = [
     longDescription: "",
     tech: ["Flutter", "Firebase", "Firestore", "REST APIs"],
     color: "primary" as const,
-    github: "https://github.com/prapanch07",
+    github: "https://github.com/prapanch07/social-media-manager",
     live: "",
   },
   {
@@ -71,7 +71,27 @@ export const projects = [
     longDescription: "",
     tech: ["Flutter", "AI/ML", "Firebase", "OpenStreetMap", "REST APIs"],
     color: "secondary" as const,
-    github: "https://github.com/prapanch07",
+    github: "https://github.com/prapanch07/MedLens",
+    live: "",
+  },
+  {
+    title: "Medicharoo - Wishlist Platform",
+    description:
+      "It was a really fun project to build. It's a social wishlist platform where you can post something you want (wish) — a gadget, a trip, literally anything — and your friends or even strangers can chip in directly via UPI. No middleman, no fees, just a QR code and a tap. I built it with React, Vite, and Firebase, keeping everything serverless and real-time.",
+    longDescription: "",
+    tech: ["React", "Vite", "Firebase"],
+    color: "accent" as const,
+    github: "https://github.com/prapanch07/Medicharo",
+    live: "",
+  },
+  {
+    title: "Nakshatra — Offline-First Vedic Astrology App",
+    description:
+      "it is a premium, offline-first mobile app built with Flutter that bridges centuries-old astronomical math with modern UI design. Powered by the Swiss Ephemeris engine, the app performs precise Vedic astrology calculations to generate interactive birth charts (Kundli), compatibility matching, and daily Panchang details completely offline. To make these insights accessible, it integrates LLaMA 3.3 (via Groq API) to act as an AI Jyotishi, translating complex planetary placements, dignities, and Vimshottari dasha timelines into highly personalized, conversational readings.",
+    longDescription: "",
+    tech: ["Flutter", "AI/ML", "LLaMA 3.3", "Groq API", "Swiss Ephemeris"],
+    color: "primary" as const,
+    github: "https://github.com/prapanch07/Nakshatra",
     live: "",
   },
 ];

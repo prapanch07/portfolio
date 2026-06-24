@@ -169,6 +169,25 @@ export default function Projects() {
             );
           })}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex justify-center mt-12"
+        >
+          <motion.a
+            href="https://github.com/prapanch07?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            className="brutal-button bg-secondary text-secondary-foreground text-base px-6 py-3"
+          >
+            View More Projects →
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );
