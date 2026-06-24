@@ -109,6 +109,8 @@ export const skills = [
   { name: "REST APIs", category: "Backend" },
   { name: "Python", category: "Languages" },
   { name: "Dart", category: "Languages" },
+  { name: "C", category: "Languages" },
+  { name: "Java", category: "Languages" },
 ];
 
 export const education = [
