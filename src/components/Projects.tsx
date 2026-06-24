@@ -104,9 +104,6 @@ export default function Projects() {
                         />
                       ))}
                     </div>
-                    <span className={`text-xs font-mono opacity-70`}>
-                      project_{String(i + 1).padStart(2, "0")}
-                    </span>
                   </div>
                   <h3
                     className={`text-xl md:text-2xl font-bold ${colors.text} relative`}
@@ -120,9 +117,11 @@ export default function Projects() {
                   <p className="text-muted-foreground mb-3">
                     {project.description}
                   </p>
-                  <p className="text-sm text-muted-foreground/70 mb-4">
-                    {project.longDescription}
-                  </p>
+                  {project.longDescription && (
+                    <p className="text-sm text-muted-foreground/70 mb-4">
+                      {project.longDescription}
+                    </p>
+                  )}
 
                   {/* Tech Tags with staggered pop-in */}
                   <div className="flex flex-wrap gap-2 mb-6">

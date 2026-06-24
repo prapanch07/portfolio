@@ -57,20 +57,18 @@ export const projects = [
   {
     title: "Social Media Management Tool",
     description:
-      "Built a scalable social media analytics dashboard with a custom time-series snapshot engine that enables historical engagement tracking beyond platform API limits.",
-    longDescription:
-      "Implemented dual-mode analytics (lifetime vs period), optimized Firestore queries, and reactive UI rendering for large content datasets.",
+      "To make professional social media tracking simple, I built a self-hosted Instagram analytics web application using Django and Flutter Web. The platform allows users to search public profiles or link their own accounts to monitor post engagement, view counts, and follower trends over time. With automated backend updates and interactive charts, the app provides creators with a complete, interactive dashboard to analyze their social footprint without any subscription fees.",
+    longDescription: "",
     tech: ["Flutter", "Firebase", "Firestore", "REST APIs"],
     color: "primary" as const,
     github: "https://github.com/prapanch07",
     live: "",
   },
   {
-    title: "Medlens",
+    title: "MedLens",
     description:
-      "Built a medicine intelligence app using a hybrid SerpApi + Groq AI pipeline for real-time drug information, price comparison across Indian pharmacies, and visual medicine identification via image recognition.",
-    longDescription:
-      "Implemented dual-API key rotation, rolling-window alarm scheduling for medicine reminders, nearby pharmacy discovery with OpenStreetMap, Firebase cloud sync, voice search, and a research hub powered by Europe PMC.",
+      "I built MedLens, a Flutter app that makes it easier for people to understand their medicines. You can search any medicine, take a photo to identify it, compare prices across pharmacies, find nearby stores, set reminders for your doses, use voice search for hands-free lookup, and read up on medical research — with everything synced to the cloud across devices.",
+    longDescription: "",
     tech: ["Flutter", "AI/ML", "Firebase", "OpenStreetMap", "REST APIs"],
     color: "secondary" as const,
     github: "https://github.com/prapanch07",
