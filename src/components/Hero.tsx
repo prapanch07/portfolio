@@ -60,7 +60,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, type: "spring", stiffness: 100 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-4 groovy-text"
+          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-4 groovy-text font-rampart-one"
         >
           {personalInfo.name}
         </motion.h1>
