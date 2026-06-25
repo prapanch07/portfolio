@@ -106,9 +106,14 @@ export default function Projects() {
                     </div>
                   </div>
                   <h3
-                    className={`text-xl md:text-2xl font-bold ${colors.text} relative`}
+                    className={`text-xl md:text-2xl font-bold ${colors.text} relative flex items-center gap-2`}
                   >
                     {project.title}
+                    {project.beta && (
+                      <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-foreground text-background px-2 py-0.5 border-2 border-foreground rounded-sm">
+                        Beta
+                      </span>
+                    )}
                   </h3>
                 </div>
 

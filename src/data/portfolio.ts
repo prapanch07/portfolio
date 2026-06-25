@@ -63,26 +63,7 @@ export const projects = [
     color: "primary" as const,
     github: "https://github.com/prapanch07/social-media-manager",
     live: "",
-  },
-  {
-    title: "MedLens",
-    description:
-      "I built MedLens, a Flutter app that makes it easier for people to understand their medicines. You can search any medicine, take a photo to identify it, compare prices across pharmacies, find nearby stores, set reminders for your doses, use voice search for hands-free lookup, and read up on medical research — with everything synced to the cloud across devices.",
-    longDescription: "",
-    tech: ["Flutter", "AI/ML", "Firebase", "OpenStreetMap", "REST APIs"],
-    color: "secondary" as const,
-    github: "https://github.com/prapanch07/MedLens",
-    live: "https://github.com/prapanch07/MedLens/releases/tag/android-release",
-  },
-  {
-    title: "Medicharoo - Wishlist Platform",
-    description:
-      "It was a really fun project to build. It's a social wishlist platform where you can post something you want (wish) — a gadget, a trip, literally anything — and your friends or even strangers can chip in directly via UPI. No middleman, no fees, just a QR code and a tap. I built it with React, Vite, and Firebase, keeping everything serverless and real-time.",
-    longDescription: "",
-    tech: ["React", "Vite", "Firebase"],
-    color: "accent" as const,
-    github: "https://github.com/prapanch07/Medicharo",
-    live: "https://medicharoo.web.app",
+    beta: true,
   },
   {
     title: "Nakshatra — Offline-First Vedic Astrology App",
@@ -93,6 +74,29 @@ export const projects = [
     color: "primary" as const,
     github: "https://github.com/prapanch07/Nakshatra",
     live: "",
+    beta: true,
+  },
+  {
+    title: "MedLens",
+    description:
+      "I built MedLens, a Flutter app that makes it easier for people to understand their medicines. You can search any medicine, take a photo to identify it, compare prices across pharmacies, find nearby stores, set reminders for your doses, use voice search for hands-free lookup, and read up on medical research — with everything synced to the cloud across devices.",
+    longDescription: "",
+    tech: ["Flutter", "AI/ML", "Firebase", "OpenStreetMap", "REST APIs"],
+    color: "secondary" as const,
+    github: "https://github.com/prapanch07/MedLens",
+    live: "https://github.com/prapanch07/MedLens/releases/tag/android-release",
+    beta: false,
+  },
+  {
+    title: "Medicharoo - Wishlist Platform",
+    description:
+      "It was a really fun project to build. It's a social wishlist platform where you can post something you want (wish) — a gadget, a trip, literally anything — and your friends or even strangers can chip in directly via UPI. No middleman, no fees, just a QR code and a tap. I built it with React, Vite, and Firebase, keeping everything serverless and real-time.",
+    longDescription: "",
+    tech: ["React", "Vite", "Firebase"],
+    color: "accent" as const,
+    github: "https://github.com/prapanch07/Medicharo",
+    live: "https://medicharoo.web.app",
+    beta: false,
   },
 ];
 
