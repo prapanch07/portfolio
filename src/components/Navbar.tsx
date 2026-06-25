@@ -97,7 +97,19 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    // Wait for AnimatePresence exit animation to finish
+                    // so the page height stabilizes before scrolling
+                    setTimeout(() => {
+                      const targetId = link.href.replace('#', '');
+                      const el = document.getElementById(targetId);
+                      if (el) {
+                        el.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }, 400);
+                  }}
                   className="px-4 py-3 text-sm font-semibold uppercase tracking-wider border-4 border-foreground bg-card hover:bg-primary hover:text-primary-foreground transition-all text-center"
                   style={{ boxShadow: "var(--shadow-brutal)" }}
                 >

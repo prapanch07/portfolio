@@ -69,7 +69,6 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-margarine), cursive, sans-serif;
-  overflow-x: hidden;
 }
 
 section[id] {
@@ -181,6 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 
