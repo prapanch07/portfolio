@@ -91,14 +91,14 @@ export default function Contact() {
                     className="flex items-center gap-4 text-foreground hover:text-primary hover:underline font-semibold text-base md:text-lg min-w-0"
                   >
                     <span
-                      className="w-12 h-12 border-3 border-foreground bg-card flex items-center justify-center"
+                      className="w-12 h-12 border-3 border-foreground bg-card flex items-center justify-center shrink-0"
                       style={{
                         boxShadow: "2px 2px 0 0 var(--foreground)",
                       }}
                     >
                       {link.icon}
                     </span>
-                    <span className="break-all">
+                    <span className="break-all text-xs sm:text-base md:text-lg">
                       {link.text}
                     </span>
                   </motion.a>
