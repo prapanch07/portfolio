@@ -2,12 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiSun, HiMoon } from "react-icons/hi";
 import { navLinks } from "@/data/portfolio";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,14 +13,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDark]);
 
   return (
     <nav
@@ -60,14 +50,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <button
-            onClick={() => setIsDark(!isDark)}
-            className="ml-4 w-10 h-10 border-4 border-foreground bg-card flex items-center justify-center font-bold text-lg hover:bg-accent transition-colors"
-            style={{ boxShadow: "var(--shadow-brutal)" }}
-            aria-label="Toggle dark mode"
-          >
-            {isDark ? <HiSun className="text-amber-400 text-xl" /> : <HiMoon className="text-indigo-400 text-xl" />}
-          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -116,13 +98,6 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={() => setIsDark(!isDark)}
-                className="px-4 py-3 text-sm font-semibold uppercase tracking-wider border-4 border-foreground bg-accent hover:bg-lavender transition-all"
-                style={{ boxShadow: "var(--shadow-brutal)" }}
-              >
-                {isDark ? <><HiSun className="inline text-amber-400 mr-2" />Light Mode</> : <><HiMoon className="inline text-indigo-400 mr-2" />Dark Mode</>}
-              </button>
             </div>
           </motion.div>
         )}
