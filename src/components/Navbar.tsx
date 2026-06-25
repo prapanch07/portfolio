@@ -32,7 +32,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto px-6 pr-8 md:pr-6 py-4 flex items-center justify-between">
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a
           href="/"
@@ -97,7 +97,17 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    const targetId = link.href.replace('#', '');
+                    const targetEl = document.getElementById(targetId);
+                    if (targetEl) {
+                      const navbarHeight = 80;
+                      const top = targetEl.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                      window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                  }}
                   className="px-4 py-3 text-sm font-semibold uppercase tracking-wider border-4 border-foreground bg-card hover:bg-primary hover:text-primary-foreground transition-all text-center"
                   style={{ boxShadow: "var(--shadow-brutal)" }}
                 >

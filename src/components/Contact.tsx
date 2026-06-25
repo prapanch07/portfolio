@@ -88,7 +88,7 @@ export default function Contact() {
                     href={link.href}
                     target={link.external ? "_blank" : undefined}
                     rel={link.external ? "noopener noreferrer" : undefined}
-                    className="flex items-center gap-4 text-foreground hover:text-primary hover:underline font-semibold text-lg"
+                    className="flex items-center gap-4 text-foreground hover:text-primary hover:underline font-semibold text-base md:text-lg min-w-0"
                   >
                     <span
                       className="w-12 h-12 border-3 border-foreground bg-card flex items-center justify-center"
@@ -98,7 +98,9 @@ export default function Contact() {
                     >
                       {link.icon}
                     </span>
-                    {link.text}
+                    <span className="break-all">
+                      {link.text}
+                    </span>
                   </motion.a>
                 ))}
               </motion.div>
