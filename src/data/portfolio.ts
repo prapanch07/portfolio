@@ -72,7 +72,7 @@ export const projects = [
     tech: ["Flutter", "AI/ML", "Firebase", "OpenStreetMap", "REST APIs"],
     color: "secondary" as const,
     github: "https://github.com/prapanch07/MedLens",
-    live: "",
+    live: "https://github.com/prapanch07/MedLens/releases/tag/android-release",
   },
   {
     title: "Medicharoo - Wishlist Platform",
@@ -82,7 +82,7 @@ export const projects = [
     tech: ["React", "Vite", "Firebase"],
     color: "accent" as const,
     github: "https://github.com/prapanch07/Medicharo",
-    live: "",
+    live: "https://medicharoo.web.app",
   },
   {
     title: "Nakshatra — Offline-First Vedic Astrology App",

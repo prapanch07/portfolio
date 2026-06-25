@@ -160,7 +160,7 @@ export default function Projects() {
                         whileTap={{ scale: 0.95 }}
                         className="brutal-button bg-primary text-primary-foreground text-sm py-2 px-4"
                       >
-                        Live Demo →
+                        Live →
                       </motion.a>
                     )}
                   </div>
