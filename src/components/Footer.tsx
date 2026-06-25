@@ -56,7 +56,7 @@ export default function Footer() {
         <div className="border-t border-background/20 mt-6 pt-6 grid grid-cols-1 md:grid-cols-3 items-center gap-2">
           <div className="hidden md:block" />
           <p className="text-sm text-background/60 text-center">
-            Vibe-coded with ☕ & ⚡ by Prapanch
+            Where code meets creativity ✨
           </p>
           <p className="text-sm text-background/50 text-center md:text-right">
             Built with Next.js, Tailwind CSS & Framer Motion
